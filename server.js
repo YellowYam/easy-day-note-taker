@@ -5,7 +5,7 @@ const express = require('express');
 const path = require('path');
 
 // Import API routes
-const api = require('./routes/notes.js');
+const api = require('./routes/index.js');
 
 // Import clog middleware from week 11 activities
 const { clog } = require('./middleware/clog');
@@ -28,11 +28,6 @@ app.use('/api', api);
 
 //Static folder is called public
 app.use(express.static('public'));
-
-// GET Route for homepage
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-);
 
 // GET Route for notes page
 app.get('/notes', (req, res) =>
