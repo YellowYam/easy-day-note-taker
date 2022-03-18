@@ -1,7 +1,7 @@
 # Note Taker [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
-  The note taker is a personal notepad for a young working professional. It uses an Express back-end to communicate with a JSON database. The data model stores notes, which have a title and a text property. The front end interface makes requests to the express back-end, which controls the viewing of these notes.
+  The note taker is a personal notepad for a young working professional. It uses an Express back-end to communicate with a JSON database. The data model stores notes, which have a title, a text property, and a unique ID. The front-end interface makes requests to the express back-end, which controls the viewing of these notes.
 
   ## TOC
   1. [Installation](#installation)   
